@@ -63,6 +63,7 @@ class CleanupPlugin implements PluginInterface, EventSubscriberInterface
 
     /**
      * Function to run after a package has been installed.
+     *
      * @param PackageEvent $event
      */
     public function onPostPackageInstall(PackageEvent $event)
@@ -75,6 +76,7 @@ class CleanupPlugin implements PluginInterface, EventSubscriberInterface
 
     /**
      * Function to run after a package has been updated.
+     *
      * @param PackageEvent $event
      */
     public function onPostPackageUpdate(PackageEvent $event)
