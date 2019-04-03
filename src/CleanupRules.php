@@ -29,7 +29,7 @@ class CleanupRules
             'doctrine/cache'                        => array($docs, $tests, 'bin'),
             'doctrine/collections'                  => array($docs, $tests),
             'doctrine/common'                       => array($docs, $tests, 'bin lib/vendor'),
-            'doctrine/dbal'                         => array($docs, $tests, 'bin build* docs2 lib/vendor'),
+            'doctrine/dbal'                         => array($docs, $tests, 'build* docs2 lib/vendor'),
             'doctrine/inflector'                    => array($docs, $tests),
             'dompdf/dompdf'                         => array($docs, $tests, 'www'),
             'filp/whoops'                           => array($docs, $tests),
