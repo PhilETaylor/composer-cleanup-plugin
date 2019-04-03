@@ -134,6 +134,7 @@ class CleanupPlugin implements PluginInterface, EventSubscriberInterface
                 try {
                     foreach (glob($dir.'/'.$pattern) as $file) {
                         $this->filesystem->remove($file);
+                        $this->io->write("Removing file: ".$file);
                     }
                 } catch (\Exception $e) {
                     $this->io->write("Could not parse $packageDir ($pattern): ".$e->getMessage());
