@@ -85,7 +85,7 @@ class CleanupPlugin implements PluginInterface, EventSubscriberInterface
      *
      * @param CommandEvent $event
      */
-    public function onPostInstallUpdateCmd(CommandEvent $event)
+    public function onPostInstallUpdateCmd(\Composer\Script\Event $event)
     {
         /** @var \Composer\Repository\WritableRepositoryInterface $repository */
         $repository = $this->composer->getRepositoryManager()->getLocalRepository();
